@@ -16,11 +16,7 @@ public class CheckGuest {
 		
 		for(int i = 0; i < guestList.length; i++) {
 			
-			String lowerName = guestList[i];
-			lowerName = lowerName.toLowerCase();
-			guestName = guestName.toLowerCase();	
-			
-			if(lowerName.equals(guestName)) {
+			if(guestList[i].equalsIgnoreCase(guestName)) {
 				
 				System.out.println(guestList[i] + " can now enter.");
 				checked = true;

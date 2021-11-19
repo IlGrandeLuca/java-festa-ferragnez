@@ -17,11 +17,7 @@ public class CheckGuestWhile {
 		
 		while(!checked && counter < guestList.length) {
 			
-			String lowerName = guestList[counter];
-			lowerName = lowerName.toLowerCase();
-			guestName = guestName.toLowerCase();	
-			
-			if(lowerName.equals(guestName)) {
+			if(guestList[counter].equalsIgnoreCase(guestName)) {
 				
 				System.out.println(guestList[counter] + " can now enter.");
 				checked = true;
